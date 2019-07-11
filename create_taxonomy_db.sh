@@ -71,7 +71,7 @@ echo -e "$(date)\t$scriptname\tRetaining scientific names..."
 grep "scientific name" names.dmp > names_scientificname.dmp
 
 echo -e "$(date)\t$scriptname\tStarting creation of taxonomy SQLite databases..."
-create_taxonomy_db.py
+python create_taxonomy_db.py
 echo -e "$(date)\t$scriptname\tCompleted creation of taxonomy SQLite databases."
 
 rm *.dmp
